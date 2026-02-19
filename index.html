@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Horizonte Afro — MVP</title>
+    <meta name="description" content="Plataforma para implementação contínua da Lei 10.639/03 com microformações, kit pedagógico e painel de evidências." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Pular para conteúdo</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="brand" aria-label="Marca">
+          <span class="brand__logo" aria-hidden="true">HA</span>
+          <div class="brand__text">
+            <strong class="brand__name">Horizonte Afro</strong>
+            <span class="brand__tag" data-i18n="brandTag">MVP • Feedback Santander Xplorer</span>
+          </div>
+        </div>
+
+        <div class="nav__actions">
+          <label class="sr-only" for="langSelect">Idioma</label>
+          <select id="langSelect" class="select" aria-label="Selecionar idioma">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="es">ES</option>
+          </select>
+
+          <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Alternar tema">
+            <span class="icon" aria-hidden="true">🌓</span>
+            <span data-i18n="themeToggle">Tema</span>
+          </button>
+
+          <a class="btn" href="#feedback" data-i18n="navCta">Dar feedback</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="badge" data-i18n="badge">Educação Étnico-Racial o ano todo • Lei 10.639/03</p>
+
+            <h1 class="hero__title" data-i18n="heroTitle">
+              Implementação contínua da Lei 10.639/03 com microformações, kit pedagógico e evidências.
+            </h1>
+
+            <p class="hero__subtitle" data-i18n="heroSubtitle">
+              Menos insegurança docente, menos “ação só em novembro”, mais rotina curricular com apoio e prestação de contas.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#feedback" data-i18n="primaryCta">Quero dar feedback</a>
+              <a class="btn btn--ghost" href="#como-funciona" data-i18n="secondaryCta">Ver como funciona</a>
+            </div>
+
+            <div class="hero__stats" role="list" aria-label="Destaques">
+              <div class="stat" role="listitem">
+                <strong data-i18n="stat1Title">Microformações</strong>
+                <span data-i18n="stat1Desc">curtas e aplicáveis</span>
+              </div>
+              <div class="stat" role="listitem">
+                <strong data-i18n="stat2Title">Kit pedagógico</strong>
+                <span data-i18n="stat2Desc">aulas prontas/adaptáveis</span>
+              </div>
+              <div class="stat" role="listitem">
+                <strong data-i18n="stat3Title">Painel de evidências</strong>
+                <span data-i18n="stat3Desc">relatórios mensais por escola/rede</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-label="Resumo do MVP">
+            <div class="card">
+              <h2 class="card__title" data-i18n="cardTitle">O que estamos validando agora</h2>
+              <ul class="list">
+                <li data-i18n="cardItem1">Se a proposta reduz insegurança e falta de tempo do(a) docente.</li>
+                <li data-i18n="cardItem2">Se o kit facilita aplicação prática em sala, sem “genérico”.</li>
+                <li data-i18n="cardItem3">Se as evidências ajudam a gestão (escola/rede) a acompanhar.</li>
+              </ul>
+              <div class="card__footer">
+                <a class="btn btn--primary" href="#feedback" data-i18n="cardCta">Responder o formulário</a>
+                <p class="muted" data-i18n="cardNote">Leva 2–4 minutos. Vale ouro.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <section class="section" id="problema">
+        <div class="container">
+          <h2 data-i18n="problemTitle">O problema (sem romantizar)</h2>
+          <p class="lead" data-i18n="problemLead">
+            Muitas escolas querem cumprir a Lei 10.639/03, mas falta rotina, material aplicável e acompanhamento real.
+          </p>
+
+          <div class="grid3">
+            <article class="panel">
+              <h3 data-i18n="pain1Title">Insegurança docente</h3>
+              <p data-i18n="pain1Desc">Formação pouco prática → medo de errar → não vira prática contínua.</p>
+            </article>
+            <article class="panel">
+              <h3 data-i18n="pain2Title">“Só em novembro”</h3>
+              <p data-i18n="pain2Desc">Ações pontuais sem sequência, sem avaliação, sem continuidade.</p>
+            </article>
+            <article class="panel">
+              <h3 data-i18n="pain3Title">Sem evidências</h3>
+              <p data-i18n="pain3Desc">Gestão não consegue acompanhar execução, lacunas e próximos passos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="solucao">
+        <div class="container">
+          <h2 data-i18n="solutionTitle">A solução (MVP)</h2>
+          <p class="lead" data-i18n="solutionLead">
+            Uma plataforma que combina microformações + kit pedagógico + painel de evidências.
+          </p>
+
+          <div class="grid2">
+            <article class="panel panel--big">
+              <h3 data-i18n="sol1Title">Microformações curtas</h3>
+              <p data-i18n="sol1Desc">
+                Conteúdos rápidos e aplicáveis, pensados pra realidade de sala de aula.
+              </p>
+            </article>
+
+            <article class="panel panel--big">
+              <h3 data-i18n="sol2Title">Kit de aulas prontas/adaptáveis</h3>
+              <p data-i18n="sol2Desc">
+                Planejamentos, atividades e checklists de aplicação (pra sair do “teórico bonito”).
+              </p>
+            </article>
+
+            <article class="panel panel--big">
+              <h3 data-i18n="sol3Title">Curadoria do território</h3>
+              <p data-i18n="sol3Desc">
+                Conteúdos e referências conectadas às comunidades e à realidade local.
+              </p>
+            </article>
+
+            <article class="panel panel--big">
+              <h3 data-i18n="sol4Title">Evidências mensais</h3>
+              <p data-i18n="sol4Desc">
+                Trilhas concluídas, certificados, portfólio e relatórios por escola/rede (execução + lacunas).
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <div class="container">
+          <h2 data-i18n="howTitle">Como funciona</h2>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="step__n">1</div>
+              <div class="step__body">
+                <h3 data-i18n="how1Title">Diagnóstico rápido</h3>
+                <p data-i18n="how1Desc">Entender o contexto da escola/rede e o ponto de partida.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__n">2</div>
+              <div class="step__body">
+                <h3 data-i18n="how2Title">Trilhas curtas + kit</h3>
+                <p data-i18n="how2Desc">Formação prática e material pronto para aplicar e adaptar.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__n">3</div>
+              <div class="step__body">
+                <h3 data-i18n="how3Title">Aplicação e evidências</h3>
+                <p data-i18n="how3Desc">Checklist + portfólio + relatório mensal para gestão e prestação de contas.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="callout">
+            <div>
+              <h3 data-i18n="calloutTitle">Agora a parte mais importante: teu feedback.</h3>
+              <p class="muted" data-i18n="calloutDesc">
+                O MVP fica bom quando a realidade bate nele. Responde aí e sem dó.
+              </p>
+            </div>
+            <a class="btn btn--primary" href="#feedback" data-i18n="calloutCta">Abrir formulário</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="feedback">
+        <div class="container">
+          <h2 data-i18n="feedbackTitle">Formulário de feedback (Santander Xplorer)</h2>
+          <p class="lead" data-i18n="feedbackLead">
+            Preenche o Google Forms abaixo. Se não carregar no teu navegador, usa o botão para abrir em nova aba.
+          </p>
+
+          <div class="form-actions">
+            <a
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf3EV_0LYt30X_teZbpl7lNFI71MY93BFxdxHCMe1jgOBP-JQ/viewform?usp=pp_url&entry.28047785=adorei"
+              data-i18n="openForm"
+            >
+              Abrir formulário em nova aba
+            </a>
+          </div>
+
+          <div class="iframe-wrap" role="region" aria-label="Google Forms">
+            <iframe
+              title="Google Forms - Feedback"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf3EV_0LYt30X_teZbpl7lNFI71MY93BFxdxHCMe1jgOBP-JQ/viewform?usp=pp_url&entry.28047785=adorei"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <p class="muted tiny" data-i18n="privacyNote">
+            Observação: o formulário é do Google; os dados seguem as políticas do Google Forms.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__grid">
+          <div>
+            <strong>Horizonte Afro</strong>
+            <p class="muted" data-i18n="footerDesc">
+              MVP para validação com colegas do Santander Xplorer.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <a href="#problema" data-i18n="footerLink1">Problema</a>
+            <a href="#solucao" data-i18n="footerLink2">Solução</a>
+            <a href="#como-funciona" data-i18n="footerLink3">Como funciona</a>
+            <a href="#feedback" data-i18n="footerLink4">Feedback</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
