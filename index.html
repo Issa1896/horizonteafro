@@ -3,24 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Horizonte Afro — MVP</title>
-    <meta name="description" content="Plataforma para implementação contínua da Lei 10.639/03 com microformações, kit pedagógico e painel de evidências." />
+    <title>Horizonte Afro — Institucional</title>
+    <meta
+      name="description"
+      content="Horizonte Afro: microformações, kit pedagógico e evidências para implementação contínua da Lei 10.639/03."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <a class="skip-link" href="#main">Pular para conteúdo</a>
 
+    <!-- HEADER / NAVBAR -->
     <header class="site-header">
-      <nav class="nav">
-        <div class="brand" aria-label="Marca">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Página inicial">
           <span class="brand__logo" aria-hidden="true">HA</span>
           <div class="brand__text">
             <strong class="brand__name">Horizonte Afro</strong>
-            <span class="brand__tag" data-i18n="brandTag">MVP • Feedback Santander Xplorer</span>
+            <span class="brand__tag" data-i18n="brandTag"
+              >Site institucional • MVP</span
+            >
           </div>
-        </div>
+        </a>
 
+        <!-- MENU DESKTOP -->
+        <nav class="nav__menu" aria-label="Menu principal">
+          <a href="#sobre" data-i18n="menuAbout">Sobre</a>
+          <a href="#solucao" data-i18n="menuSolution">Solução</a>
+          <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
+          <a href="#beneficios" data-i18n="menuBenefits">Benefícios</a>
+          <a href="#faq" data-i18n="menuFaq">FAQ</a>
+          <a href="#contato" data-i18n="menuContact">Contato</a>
+        </nav>
+
+        <!-- AÇÕES -->
         <div class="nav__actions">
           <label class="sr-only" for="langSelect">Idioma</label>
           <select id="langSelect" class="select" aria-label="Selecionar idioma">
@@ -30,133 +47,194 @@
             <option value="es">ES</option>
           </select>
 
-          <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Alternar tema">
+          <button id="themeToggle" class="btn btn--ghost" type="button">
             <span class="icon" aria-hidden="true">🌓</span>
             <span data-i18n="themeToggle">Tema</span>
           </button>
 
-          <a class="btn" href="#feedback" data-i18n="navCta">Dar feedback</a>
+          <a class="btn btn--primary" href="#feedback" data-i18n="navCta"
+            >Dar feedback</a
+          >
+
+          <!-- HAMBURGER -->
+          <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Abrir menu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+          >
+            <span class="hamburger__bar"></span>
+            <span class="hamburger__bar"></span>
+            <span class="hamburger__bar"></span>
+          </button>
         </div>
-      </nav>
+      </div>
+
+      <!-- MENU MOBILE -->
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <div class="container mobile-menu__inner">
+          <a href="#sobre" data-i18n="menuAbout">Sobre</a>
+          <a href="#solucao" data-i18n="menuSolution">Solução</a>
+          <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
+          <a href="#beneficios" data-i18n="menuBenefits">Benefícios</a>
+          <a href="#faq" data-i18n="menuFaq">FAQ</a>
+          <a href="#contato" data-i18n="menuContact">Contato</a>
+          <a class="btn btn--primary" href="#feedback" data-i18n="navCta"
+            >Dar feedback</a
+          >
+        </div>
+      </div>
     </header>
 
     <main id="main">
-      <section class="hero">
+      <!-- HERO -->
+      <section class="hero" id="top">
         <div class="container hero__grid">
           <div class="hero__copy">
-            <p class="badge" data-i18n="badge">Educação Étnico-Racial o ano todo • Lei 10.639/03</p>
+            <p class="badge" data-i18n="badge">
+              Educação Étnico-Racial o ano todo • Lei 10.639/03
+            </p>
 
-            <h1 class="hero__title" data-i18n="heroTitle">
-              Implementação contínua da Lei 10.639/03 com microformações, kit pedagógico e evidências.
+            <h1 class="hero__title" data-i18n="heroTitle2">
+              Uma plataforma para transformar a implementação da Lei 10.639/03
+              em rotina pedagógica.
             </h1>
 
-            <p class="hero__subtitle" data-i18n="heroSubtitle">
-              Menos insegurança docente, menos “ação só em novembro”, mais rotina curricular com apoio e prestação de contas.
+            <p class="hero__subtitle" data-i18n="heroSubtitle2">
+              Microformações aplicáveis, kit de aula pronto/adaptável e painel de
+              evidências para escolas e redes.
             </p>
 
             <div class="hero__cta">
-              <a class="btn btn--primary" href="#feedback" data-i18n="primaryCta">Quero dar feedback</a>
-              <a class="btn btn--ghost" href="#como-funciona" data-i18n="secondaryCta">Ver como funciona</a>
+              <a class="btn btn--primary" href="#solucao" data-i18n="primaryCta2"
+                >Conhecer a solução</a
+              >
+              <a class="btn btn--ghost" href="#contato" data-i18n="secondaryCta2"
+                >Falar com a equipe</a
+              >
             </div>
 
-            <div class="hero__stats" role="list" aria-label="Destaques">
-              <div class="stat" role="listitem">
-                <strong data-i18n="stat1Title">Microformações</strong>
-                <span data-i18n="stat1Desc">curtas e aplicáveis</span>
+            <div class="trust" aria-label="Sinais de credibilidade">
+              <div class="trust__item">
+                <strong data-i18n="trust1Title">Foco em prática</strong>
+                <span data-i18n="trust1Desc">menos teoria solta</span>
               </div>
-              <div class="stat" role="listitem">
-                <strong data-i18n="stat2Title">Kit pedagógico</strong>
-                <span data-i18n="stat2Desc">aulas prontas/adaptáveis</span>
+              <div class="trust__item">
+                <strong data-i18n="trust2Title">Acompanhamento</strong>
+                <span data-i18n="trust2Desc">evidências mensais</span>
               </div>
-              <div class="stat" role="listitem">
-                <strong data-i18n="stat3Title">Painel de evidências</strong>
-                <span data-i18n="stat3Desc">relatórios mensais por escola/rede</span>
+              <div class="trust__item">
+                <strong data-i18n="trust3Title">Território</strong>
+                <span data-i18n="trust3Desc">conexão com comunidades</span>
               </div>
             </div>
           </div>
 
-          <div class="hero__card" aria-label="Resumo do MVP">
+          <aside class="hero__card" aria-label="Chamado para validação">
             <div class="card">
-              <h2 class="card__title" data-i18n="cardTitle">O que estamos validando agora</h2>
+              <h2 class="card__title" data-i18n="cardTitle2">
+                Estamos validando o MVP
+              </h2>
+              <p class="muted" data-i18n="cardLead2">
+                Precisamos do teu olhar crítico pra ajustar o produto.
+              </p>
               <ul class="list">
-                <li data-i18n="cardItem1">Se a proposta reduz insegurança e falta de tempo do(a) docente.</li>
-                <li data-i18n="cardItem2">Se o kit facilita aplicação prática em sala, sem “genérico”.</li>
-                <li data-i18n="cardItem3">Se as evidências ajudam a gestão (escola/rede) a acompanhar.</li>
+                <li data-i18n="cardItem1"
+                  >O problema está claro e real?</li
+                >
+                <li data-i18n="cardItem2"
+                  >A solução parece aplicável no dia a dia?</li
+                >
+                <li data-i18n="cardItem3"
+                  >O que te faria recomendar ou comprar?</li
+                >
               </ul>
               <div class="card__footer">
-                <a class="btn btn--primary" href="#feedback" data-i18n="cardCta">Responder o formulário</a>
-                <p class="muted" data-i18n="cardNote">Leva 2–4 minutos. Vale ouro.</p>
+                <a class="btn btn--primary" href="#feedback" data-i18n="cardCta"
+                  >Responder o formulário</a
+                >
+                <p class="muted tiny" data-i18n="cardNote">
+                  Leva 2–4 minutos. Prometo não doer.
+                </p>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
 
         <div class="hero__bg" aria-hidden="true"></div>
       </section>
 
-      <section class="section" id="problema">
+      <!-- SOBRE -->
+      <section class="section" id="sobre">
         <div class="container">
-          <h2 data-i18n="problemTitle">O problema (sem romantizar)</h2>
-          <p class="lead" data-i18n="problemLead">
-            Muitas escolas querem cumprir a Lei 10.639/03, mas falta rotina, material aplicável e acompanhamento real.
-          </p>
-
-          <div class="grid3">
-            <article class="panel">
-              <h3 data-i18n="pain1Title">Insegurança docente</h3>
-              <p data-i18n="pain1Desc">Formação pouco prática → medo de errar → não vira prática contínua.</p>
-            </article>
-            <article class="panel">
-              <h3 data-i18n="pain2Title">“Só em novembro”</h3>
-              <p data-i18n="pain2Desc">Ações pontuais sem sequência, sem avaliação, sem continuidade.</p>
-            </article>
-            <article class="panel">
-              <h3 data-i18n="pain3Title">Sem evidências</h3>
-              <p data-i18n="pain3Desc">Gestão não consegue acompanhar execução, lacunas e próximos passos.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--alt" id="solucao">
-        <div class="container">
-          <h2 data-i18n="solutionTitle">A solução (MVP)</h2>
-          <p class="lead" data-i18n="solutionLead">
-            Uma plataforma que combina microformações + kit pedagógico + painel de evidências.
+          <h2 data-i18n="aboutTitle">Sobre o Horizonte Afro</h2>
+          <p class="lead" data-i18n="aboutLead">
+            A educação étnico-racial não pode ser evento: precisa virar rotina.
+            O Horizonte Afro nasce para apoiar docentes e gestores com formação
+            prática, materiais aplicáveis e acompanhamento.
           </p>
 
           <div class="grid2">
             <article class="panel panel--big">
-              <h3 data-i18n="sol1Title">Microformações curtas</h3>
-              <p data-i18n="sol1Desc">
-                Conteúdos rápidos e aplicáveis, pensados pra realidade de sala de aula.
+              <h3 data-i18n="missionTitle">Missão</h3>
+              <p data-i18n="missionDesc">
+                Ajudar escolas e redes a implementarem a Lei 10.639/03 de forma
+                contínua, segura e mensurável.
               </p>
             </article>
-
             <article class="panel panel--big">
-              <h3 data-i18n="sol2Title">Kit de aulas prontas/adaptáveis</h3>
-              <p data-i18n="sol2Desc">
-                Planejamentos, atividades e checklists de aplicação (pra sair do “teórico bonito”).
-              </p>
-            </article>
-
-            <article class="panel panel--big">
-              <h3 data-i18n="sol3Title">Curadoria do território</h3>
-              <p data-i18n="sol3Desc">
-                Conteúdos e referências conectadas às comunidades e à realidade local.
-              </p>
-            </article>
-
-            <article class="panel panel--big">
-              <h3 data-i18n="sol4Title">Evidências mensais</h3>
-              <p data-i18n="sol4Desc">
-                Trilhas concluídas, certificados, portfólio e relatórios por escola/rede (execução + lacunas).
+              <h3 data-i18n="visionTitle">Visão</h3>
+              <p data-i18n="visionDesc">
+                Currículos vivos, conectados ao território e sustentados por
+                práticas pedagógicas consistentes.
               </p>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- SOLUÇÃO -->
+      <section class="section section--alt" id="solucao">
+        <div class="container">
+          <h2 data-i18n="solutionTitle">O que oferecemos</h2>
+          <p class="lead" data-i18n="solutionLead2">
+            Um conjunto de módulos pensados para o cotidiano escolar do
+            professor à gestão.
+          </p>
+
+          <div class="grid2">
+            <article class="panel panel--big">
+              <h3 data-i18n="offer1Title">Microformações</h3>
+              <p data-i18n="offer1Desc">
+                Aulas curtas, objetivas e diretamente aplicáveis em sala.
+              </p>
+            </article>
+            <article class="panel panel--big">
+              <h3 data-i18n="offer2Title">Kit pedagógico</h3>
+              <p data-i18n="offer2Desc">
+                Sequências didáticas, atividades e checklists para adaptar.
+              </p>
+            </article>
+            <article class="panel panel--big">
+              <h3 data-i18n="offer3Title">Curadoria do território</h3>
+              <p data-i18n="offer3Desc">
+                Conteúdos conectados às comunidades e à realidade local.
+              </p>
+            </article>
+            <article class="panel panel--big">
+              <h3 data-i18n="offer4Title">Painel de evidências</h3>
+              <p data-i18n="offer4Desc">
+                Acompanhamento mensal: trilhas, certificados, portfólios e
+                relatórios por escola/rede.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMO FUNCIONA -->
       <section class="section" id="como-funciona">
         <div class="container">
           <h2 data-i18n="howTitle">Como funciona</h2>
@@ -165,43 +243,164 @@
             <li class="step">
               <div class="step__n">1</div>
               <div class="step__body">
-                <h3 data-i18n="how1Title">Diagnóstico rápido</h3>
-                <p data-i18n="how1Desc">Entender o contexto da escola/rede e o ponto de partida.</p>
+                <h3 data-i18n="how1Title">Diagnóstico</h3>
+                <p data-i18n="how1Desc">
+                  Entendemos o contexto e os objetivos da escola/rede.
+                </p>
               </div>
             </li>
             <li class="step">
               <div class="step__n">2</div>
               <div class="step__body">
-                <h3 data-i18n="how2Title">Trilhas curtas + kit</h3>
-                <p data-i18n="how2Desc">Formação prática e material pronto para aplicar e adaptar.</p>
+                <h3 data-i18n="how2Title">Trilhas e aplicação</h3>
+                <p data-i18n="how2Desc">
+                  Microformações + kit para aplicar e adaptar com segurança.
+                </p>
               </div>
             </li>
             <li class="step">
               <div class="step__n">3</div>
               <div class="step__body">
-                <h3 data-i18n="how3Title">Aplicação e evidências</h3>
-                <p data-i18n="how3Desc">Checklist + portfólio + relatório mensal para gestão e prestação de contas.</p>
+                <h3 data-i18n="how3Title">Evidências e evolução</h3>
+                <p data-i18n="how3Desc">
+                  Relatórios mensais para acompanhar avanços e lacunas.
+                </p>
               </div>
             </li>
           </ol>
 
           <div class="callout">
             <div>
-              <h3 data-i18n="calloutTitle">Agora a parte mais importante: teu feedback.</h3>
+              <h3 data-i18n="calloutTitle">Quer ajudar a melhorar o MVP?</h3>
               <p class="muted" data-i18n="calloutDesc">
-                O MVP fica bom quando a realidade bate nele. Responde aí e sem dó.
+                Teu feedback vai direto pro ajuste de proposta, copy e roadmap.
               </p>
             </div>
-            <a class="btn btn--primary" href="#feedback" data-i18n="calloutCta">Abrir formulário</a>
+            <a class="btn btn--primary" href="#feedback" data-i18n="calloutCta"
+              >Abrir formulário</a
+            >
           </div>
         </div>
       </section>
 
-      <section class="section section--alt" id="feedback">
+      <!-- BENEFÍCIOS -->
+      <section class="section section--alt" id="beneficios">
         <div class="container">
-          <h2 data-i18n="feedbackTitle">Formulário de feedback (Santander Xplorer)</h2>
+          <h2 data-i18n="benefitsTitle">Benefícios</h2>
+          <p class="lead" data-i18n="benefitsLead">
+            Resultado esperado: prática contínua, menor retrabalho e maior
+            segurança pedagógica.
+          </p>
+
+          <div class="grid3">
+            <article class="panel">
+              <h3 data-i18n="ben1Title">Para docentes</h3>
+              <p data-i18n="ben1Desc">
+                Roteiros aplicáveis, menos improviso, mais confiança.
+              </p>
+            </article>
+            <article class="panel">
+              <h3 data-i18n="ben2Title">Para gestão</h3>
+              <p data-i18n="ben2Desc">
+                Evidências e indicadores para acompanhar implementação real.
+              </p>
+            </article>
+            <article class="panel">
+              <h3 data-i18n="ben3Title">Para estudantes</h3>
+              <p data-i18n="ben3Desc">
+                Currículo mais representativo e conectado ao território.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <h2 data-i18n="faqTitle">Perguntas frequentes</h2>
+
+          <div class="faq">
+            <details class="faq__item">
+              <summary data-i18n="faq1Q">
+                Isso substitui formação da rede?
+              </summary>
+              <p data-i18n="faq1A">
+                Não. Complementa com prática aplicável e acompanhamento contínuo,
+                com foco em sala de aula e evidências.
+              </p>
+            </details>
+
+            <details class="faq__item">
+              <summary data-i18n="faq2Q">
+                Funciona para escolas pequenas?
+              </summary>
+              <p data-i18n="faq2A">
+                Sim. O MVP é pensado para ser modular: dá pra começar pequeno e
+                expandir conforme adesão.
+              </p>
+            </details>
+
+            <details class="faq__item">
+              <summary data-i18n="faq3Q">
+                O que vocês precisam agora?
+              </summary>
+              <p data-i18n="faq3A">
+                Feedback sobre clareza do problema, atratividade da solução e o
+                que falta para virar “eu compraria”.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="section section--alt" id="contato">
+        <div class="container">
+          <h2 data-i18n="contactTitle">Contato</h2>
+          <p class="lead" data-i18n="contactLead">
+            Quer conversar, pilotar ou apoiar? Deixa teu contato e retorna a
+            gente.
+          </p>
+
+          <div class="contact-grid">
+            <div class="panel panel--big">
+              <h3 data-i18n="contactCardTitle">Fale com a equipe</h3>
+              <p class="muted" data-i18n="contactCardDesc">
+                (MVP) Coloque teu e-mail/WhatsApp no formulário de feedback ou
+                manda mensagem para:
+              </p>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> marcelinoissacunha@gmail.com</li>
+                <li><strong>WhatsApp:</strong> +55 (85) 98944-7557</li>
+              </ul>
+              <p class="muted tiny" data-i18n="contactNote">
+                Troca esses contatos pelos teus reais quando for publicar.
+              </p>
+            </div>
+
+            <div class="panel panel--big">
+              <h3 data-i18n="contactCtaTitle">Preferes ir direto ao ponto?</h3>
+              <p class="muted" data-i18n="contactCtaDesc">
+                Responde o formulário e escreve o que tu acha que está fraco.
+              </p>
+              <a class="btn btn--primary" href="#feedback" data-i18n="navCta"
+                >Dar feedback</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEEDBACK (GOOGLE FORMS) -->
+      <section class="section" id="feedback">
+        <div class="container">
+          <h2 data-i18n="feedbackTitle">
+            Formulário de feedback (Santander Xplorer)
+          </h2>
           <p class="lead" data-i18n="feedbackLead">
-            Preenche o Google Forms abaixo. Se não carregar no teu navegador, usa o botão para abrir em nova aba.
+            Preenche o Google Forms abaixo. Se não carregar, usa o botão para
+            abrir em nova aba.
           </p>
 
           <div class="form-actions">
@@ -221,12 +420,12 @@
               title="Google Forms - Feedback"
               src="https://docs.google.com/forms/d/e/1FAIpQLSf3EV_0LYt30X_teZbpl7lNFI71MY93BFxdxHCMe1jgOBP-JQ/viewform?usp=pp_url&entry.28047785=adorei"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
           <p class="muted tiny" data-i18n="privacyNote">
-            Observação: o formulário é do Google; os dados seguem as políticas do Google Forms.
+            Observação: o formulário é do Google; os dados seguem as políticas do
+            Google Forms.
           </p>
         </div>
       </section>
@@ -236,20 +435,49 @@
           <div>
             <strong>Horizonte Afro</strong>
             <p class="muted" data-i18n="footerDesc">
-              MVP para validação com colegas do Santander Xplorer.
+              Site institucional (MVP) para validação.
             </p>
           </div>
 
-          <div class="footer__links">
-            <a href="#problema" data-i18n="footerLink1">Problema</a>
-            <a href="#solucao" data-i18n="footerLink2">Solução</a>
-            <a href="#como-funciona" data-i18n="footerLink3">Como funciona</a>
-            <a href="#feedback" data-i18n="footerLink4">Feedback</a>
+          <div class="footer__links" aria-label="Links do rodapé">
+            <a href="#sobre" data-i18n="menuAbout">Sobre</a>
+            <a href="#solucao" data-i18n="menuSolution">Solução</a>
+            <a href="#como-funciona" data-i18n="menuHow">Como funciona</a>
+            <a href="#feedback" data-i18n="navCta">Dar feedback</a>
           </div>
         </div>
       </footer>
     </main>
 
     <script src="script.js"></script>
+
+    <!-- JS bem pequeno só pro menu mobile (fica aqui pra não mexer no teu script.js se quiser) -->
+    <script>
+      (function () {
+        const btn = document.getElementById("hamburger");
+        const menu = document.getElementById("mobileMenu");
+        if (!btn || !menu) return;
+
+        function closeMenu() {
+          menu.hidden = true;
+          btn.setAttribute("aria-expanded", "false");
+        }
+
+        btn.addEventListener("click", () => {
+          const isOpen = btn.getAttribute("aria-expanded") === "true";
+          btn.setAttribute("aria-expanded", String(!isOpen));
+          menu.hidden = isOpen;
+        });
+
+        menu.addEventListener("click", (e) => {
+          const a = e.target.closest("a");
+          if (a) closeMenu();
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeMenu();
+        });
+      })();
+    </script>
   </body>
 </html>
